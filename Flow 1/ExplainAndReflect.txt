@@ -1,0 +1,44 @@
+Java & JavaScript
+
+The main difference between Java and JavaScript is that Java is a compiled language, 
+meaning that every change made, requires a recompiling of the program and redeployment. EVERY time.
+But this also means that when you do compile the code in the IDE, any problems shows immidiately, 
+as long as it's not down to poorly written code or oversight. 
+Java is also less than ideal for websites for this very reason, meaning that the sites often becomes slower and more clunky
+using the applets of Java.
+Java is using class-based inheritance and relationships where properties are defined in a class and inherited by an instance of that class.
+
+JavaScript on the other hand is mostly a language, in its pure form, made for website development,
+which is often implemented into the .html files using the <script> tag. 
+JavaScript is clientside meaning that any change to the code can immidiately be shown on the website, 
+without the need of recompiling and redeploying. But because of this,
+any issues will first show at runtime, eg. when it is on the website. 
+
+Both languages are object oriented and can be used for front-end development as well as back-end,
+where Java has been used to power the likes of Apache and JavaScript uses Node.js, 
+which has quickly gained traction for JavaScript servers.
+
+
+But what is Node.js?
+Node.js is an open source server platform running on JavaScript usable on all major OS',
+often used to make server-sided applications, and web-applications. 
+Node.js is Asynchronous and Event-loop based, meaning that it never awaits an answer from a request, 
+and insteads immidiately moves on to the next task,
+and then processes the answer, when it does return, whenever. 
+Node.js is single-threaded which makes Node.js extremely scalable, and suitable for large applications as a result. 
+
+
+The Event-loop operates on the call-stack using the LIFO queue system,
+where it constantly checks for tasks to run, and functions to add to the stack, executing them in order. 
+As different tasks takes different amounts of time, the tasks are delegated out to their respective targets, away from the call-stack.
+Take a timeout function for example, even one for 0 seconds, this is enough to remove the task from the stack, 
+and have it delegated to the browser instead, to start and immidietly end a timer. 
+But now this task is behind in the event-queue, because it got send away, got what it needed, 
+and then returns back with its result to be processed.
+eg. The Event-loop will always prioritize the call-stack over the event-queue. 
+
+
+npm is the worlds largest software library, containing over 800 000 Node.js code packages, and is used to share software. 
+It is a sort of subset of Node.js, and as thus requires Node.js to be installed before npm can be used. 
+npm makes it extremely easy to import and manage the modules you download into your projects, and works as an excellent
+tool to add a lot of functionality to your own projects, thus saving development time.  
